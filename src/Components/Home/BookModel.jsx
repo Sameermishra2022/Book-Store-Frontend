@@ -48,12 +48,8 @@ const BookModel = ({ book, onClose }) => {
         {/* Extra Description Content */}
         <h3 className='text-sm font-semibold text-indigo-400 mb-2 uppercase tracking-wider'>Anything You want to show</h3>
         <p className='text-sm text-slate-400 leading-relaxed bg-slate-950/40 p-4 rounded-xl border border-slate-800/60'>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni quia
-          voluptatum sint. Nisi impedit libero eveniet cum vitae qui expedita
-          necessitatibus assumenda laboriosam, facilis iste cumque a pariatur
-          nesciunt cupiditate voluptas? Quis atque earum voluptate dolor nisi
-          dolorum est? Deserunt placeat cumque quo dicta architecto, dolore
-          vitae voluptate sequi repellat!
+         This is a wonderful book that offers great insights and knowledge. It is an essential read 
+         for anyone interested in exploring new perspectives and mastering valuable concepts.
         </p>
       </div>
     </div>

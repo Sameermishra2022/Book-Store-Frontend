@@ -7,20 +7,22 @@ import { BsInfoCircle } from 'react-icons/bs';
 import { MdOutlineDelete } from 'react-icons/md';
 import BookModel from './BookModel';
 
-const BookSingleCard = ({ books }) => {
+const BookSingleCard = ({ books, index }) => {
   const [showModal, setShowModal] = useState(false);
   
   return (
     <div className="h-full">
-      <div className="group relative bg-slate-900/60 backdrop-blur-xl border border-slate-800/80 rounded-2xl p-6 transition-all duration-300 hover:scale-[1.02] hover:border-indigo-500/50 hover:shadow-2xl hover:shadow-indigo-500/10 flex flex-col justify-between h-full">
+      <div className="group relative bg-slate-900/65 backdrop-blur-xl border border-slate-800/80 rounded-2xl p-6 transition-all duration-300 hover:scale-[1.02] hover:border-indigo-500/50 hover:shadow-2xl hover:shadow-indigo-500/10 flex flex-col justify-between h-full">
         <div>
           {/* Publish Year Badge */}
           <span className="absolute top-4 right-4 px-3 py-1 bg-gradient-to-r from-indigo-500/10 to-sky-500/10 border border-indigo-500/30 rounded-full text-indigo-400 text-xs font-semibold">
             {books.publishYear || books.publishyear}
           </span>
 
-          {/* Book ID / Subtitle */}
-          <p className="text-xs font-mono text-slate-500 mb-4 tracking-wider truncate max-w-[200px]">ID: {books._id}</p>
+          {/* Sirf Number (1, 2, 3...) dikhega */}
+          <p className="text-xs font-mono text-slate-400 mb-4 tracking-wider">
+            {index !== undefined ? index + 1 : ''}
+          </p>
 
           {/* Title */}
           <div className="flex items-start gap-3 mb-3">
